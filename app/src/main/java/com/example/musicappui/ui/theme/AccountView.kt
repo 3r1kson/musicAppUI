@@ -15,6 +15,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.motionEventSpy
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.musicappui.R
@@ -36,8 +37,8 @@ fun AccountView() {
                     modifier = Modifier.padding(end = 8.dp))
 
                 Column {
-                    Text("Tutorials")
-                    Text("@.com.br")
+                    Text(text = "Tutorials")
+                    Text(text = "@.com.br",)
                 }
             }
             IconButton(onClick = {}) {
@@ -48,7 +49,7 @@ fun AccountView() {
         }
 
         Row(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
             horizontalArrangement = Arrangement.SpaceBetween,
         ) {
             Row() {
